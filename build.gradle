@@ -21,6 +21,8 @@ springBoot {
 }
 
 dependencies {
+	compile 'io.micrometer:micrometer-registry-prometheus:latest.release'
+	implementation 'io.micrometer.prometheus:prometheus-rsocket-spring:0.9.0'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
